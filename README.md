@@ -1,4 +1,5 @@
 ===================================README======================================
+
 Clasa MyDispatcher
 In metoda addTask(), aleg de fiecare data host-ul catre care trimit task-ul, in
 functie de algoritmul dorit. Pentru Round Robin, am folosit formula data, (i+1)%
