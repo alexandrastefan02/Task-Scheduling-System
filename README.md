@@ -1,6 +1,7 @@
 ===================================README======================================
 
 Clasa MyDispatcher
+
 In metoda addTask(), aleg de fiecare data host-ul catre care trimit task-ul, in
 functie de algoritmul dorit. Pentru Round Robin, am folosit formula data, (i+1)%
 (nr noduri). Pentru Shortest Queue, se alege mereu nodul care are lungimea cozii
@@ -15,6 +16,7 @@ la un moment dat. Astfel, se previn race conditions și se asigură consistența
 când sarcinile sunt adăugate în sistem.
 
 Clasa MyHost
+
 Am adaugat syncronized pentru addTask, getQueueSize, și getWorkLeft, pentru a asigura accesul 
 si modificarea cozii de prioritate intr-un mod thread-safe. 
 Am folosit un priority queue pe care o ordonez in functie de prioritate, iar in cazul in care sunt
